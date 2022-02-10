@@ -14,6 +14,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 import nuxt_plugin_plugin_d233318e from 'nuxt_plugin_plugin_d233318e' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_bootstrapvue_70667efe from 'nuxt_plugin_bootstrapvue_70667efe' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_adsbygoogle_57ca6f85 from 'nuxt_plugin_adsbygoogle_57ca6f85' // Source: ./adsbygoogle.js (mode: 'all')
+import nuxt_plugin_googleanalytics_f6185e12 from 'nuxt_plugin_googleanalytics_f6185e12' // Source: ./google-analytics.js (mode: 'client')
 import nuxt_plugin_axios_22724062 from 'nuxt_plugin_axios_22724062' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_microcms_aea519f8 from 'nuxt_plugin_microcms_aea519f8' // Source: ./microcms.js (mode: 'all')
 import nuxt_plugin_elementui_d905880e from 'nuxt_plugin_elementui_d905880e' // Source: ../plugins/element-ui (mode: 'all')
@@ -66,7 +68,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"gachiblog2","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"gachiblog2","htmlAttrs":{"lang":"en"},"meta":[{"name":"robots","content":"noindex,noarchive,nofollow"},{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[{"hid":"adsbygoogle-script","defer":true,"crossorigin":"anonymous","src":"\u002F\u002Fpagead2.googlesyndication.com\u002Fpagead\u002Fjs\u002Fadsbygoogle.js?client=ca-google"},{"hid":"adsbygoogle","innerHTML":"if (!window.__abg_called){ (window.adsbygoogle = window.adsbygoogle || []); adsbygoogle.pauseAdRequests=0;\n          adsbygoogle.push({\n      google_ad_client: \"ca-google\",\n      overlays: {bottom: false},\n      enable_page_level_ads: true\n    }); window.__abg_called = true;}"}],"__dangerouslyDisableSanitizersByTagID":{"adsbygoogle":["innerHTML"]}},
 
     router,
     nuxt: {
@@ -186,6 +188,14 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_bootstrapvue_70667efe === 'function') {
     await nuxt_plugin_bootstrapvue_70667efe(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_adsbygoogle_57ca6f85 === 'function') {
+    await nuxt_plugin_adsbygoogle_57ca6f85(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_googleanalytics_f6185e12 === 'function') {
+    await nuxt_plugin_googleanalytics_f6185e12(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_22724062 === 'function') {

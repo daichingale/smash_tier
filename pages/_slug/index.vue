@@ -1,7 +1,7 @@
 <template>
 <div>
   <ul class="lists">
-  <li :class="`list ${item.name}`" v-for="item in toc" :key="item.id">
+  <li :class="`list ${item.name}`" :key="item.id">
    <n-link v-scroll-to="`#${item.id}`" to>
       {{ item.text }}
     </n-link>
@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 
 export default {
   head () {

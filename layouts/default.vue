@@ -10,6 +10,7 @@
         </div>  
           <!-- </el-col>
         </el-row> -->
+        <adsbygoogle />
 
       <Footer />
     

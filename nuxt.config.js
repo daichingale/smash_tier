@@ -1,4 +1,8 @@
 export default {
+
+  // googleAnalytics: {
+  //   id: process.env.GOOGLE_ANALYTICS_ID,
+  // },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -46,6 +50,15 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
+    '@nuxtjs/google-analytics',
+    ['@nuxtjs/google-adsense', 
+    {
+      id: process.env.GOOGLE_ADSENSE_ID,
+      pageLevelAds: true,
+      analyticsUacct: process.env.GOOGLE_ANALYTICS_ID,
+      analyticsDomainName: 'smashbros-info.com'
+    },
+  ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
