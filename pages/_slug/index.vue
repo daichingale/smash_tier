@@ -1,13 +1,6 @@
 <template>
 <div>
-  <ul class="lists">
-  <li :class="`list ${item.name}`" v-for="item in toc" :key="item.id">
-   <n-link v-scroll-to="`#${item.id}`" to>
-      {{ item.text }}
-    </n-link>
-  </li>
-</ul>
-  <main class="main">
+ <main class="main">
     <h1 class="title">{{ title }}</h1>
     <p class="publishedAt">{{ publishedAt }}</p>
     <div class="category">
@@ -15,43 +8,29 @@
       </div>
     <img :src="image.url" width=50% id="gazou">
     <hr>
-    
     <div class="post" v-html="blogtext"></div>
-    <!-- <div class="post" v-if="content[1].richtext!=''">{{ content[1].richtext }}</div> -->
-    <!-- <div><html>{{ content.richtext }}</html></div> -->
-    
   </main>
 </div>
   
 </template>
 
 <script>
-
 export default {
+  components: {
+  },
   head () {
     return {
       title : 'Blog',
     }
   },
-  // async asyncData({ params }) {
-  //   const { data } = await axios.get(
-  //     `https://smashbrosinfo.microcms.io/api/v1/blog/${params.slug}`,
-  //     {
-  //       headers:{"X-MICROCMS-API-KEY":process.env.APIKEY}
-  //     }
-  //   ).catch( e => this.error = e )
-  //   return data
-  // },
   async asyncData({ params, $microcms }) {
     const data = await $microcms.get({
       endpoint: "blog",
       contentId: params.slug,
     });
-    return data;
+    return data
   },
 }
-
-
 </script>
 
 <style>
@@ -67,8 +46,6 @@ export default {
     font-size: 20px;
     font-weight: bold;
     margin: 20px 0;
-    /* padding: 3px;
-    border-bottom: double 5px #FFC778; */
     color: #364e96;/*文字色*/
     padding: 0.5em 0;/*上下の余白*/
     border-top: solid 3px #364e96;/*上線*/

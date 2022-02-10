@@ -56,7 +56,7 @@
                   ネス使いの楽園「ネス窓」についてはこちらですよ
                 </p>
                 <a
-                  href="/posts"
+                  href="/vip-ness"
                   class="card-link">to Ness team</a>
               </div>
             </div>

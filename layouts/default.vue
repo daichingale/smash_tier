@@ -21,7 +21,7 @@
 import NavBar from '~/components/NavBar.vue';
 import Sidebar from '~/components/Sidebar.vue';
 import Search from '~/components/Search.vue';
-import Footer from '~/components/Footer.vue'
+import Footer from '~/components/Footer.vue';
 export default {
   components:{
     NavBar,
