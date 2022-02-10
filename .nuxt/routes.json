@@ -1,0 +1,30 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/daichingale/Desktop/gachiblog2/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_770861ac"
+  },
+  {
+    "name": "posts",
+    "path": "/posts",
+    "component": "/Users/daichingale/Desktop/gachiblog2/pages/posts/index.vue",
+    "chunkName": "pages/posts/index",
+    "_name": "_014b06f3"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/daichingale/Desktop/gachiblog2/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_3798ac22"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "/Users/daichingale/Desktop/gachiblog2/pages/_slug/index.vue",
+    "chunkName": "pages/_slug/index",
+    "_name": "_189435ea"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "NavBar": {
+    "description": "Auto imported from components/NavBar.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Search": {
+    "description": "Auto imported from components/Search.vue"
+  },
+  "Sidebar": {
+    "description": "Auto imported from components/Sidebar.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  }
+}
