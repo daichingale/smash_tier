@@ -54,7 +54,12 @@ export default {
     '@nuxtjs/axios',
     // 'nuxt-fontawesome',
     // 'bootstrap-vue/nuxt',
-    '@nuxtjs/google-analytics',
+    // '@nuxtjs/google-analytics',
+    '@nuxtjs/google-gtag',
+    'google-gtag', {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+      debug: true, // Enable to track in dev mode.
+    },
     ['@nuxtjs/google-adsense', 
     {
       id: process.env.GOOGLE_ADSENSE_ID,
