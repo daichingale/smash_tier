@@ -49,6 +49,10 @@ export default {
   fontawesome: {
     component: 'fa',
   },
+  'google-gtag': {
+    id: process.env.GOOGLE_ANALYTICS_ID,
+    debug: true, // Enable to track in dev mode.
+  },
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
@@ -56,10 +60,6 @@ export default {
     // 'bootstrap-vue/nuxt',
     // '@nuxtjs/google-analytics',
     '@nuxtjs/google-gtag',
-    'google-gtag': {
-      id: process.env.GOOGLE_ANALYTICS_ID,
-      debug: true, // Enable to track in dev mode.
-    },
     ['@nuxtjs/google-adsense', 
     {
       id: process.env.GOOGLE_ADSENSE_ID,
