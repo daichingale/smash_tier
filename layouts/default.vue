@@ -3,7 +3,6 @@
          <NavBar />
          <!-- <Search /> -->
         <!-- <el-row class="tac">
-        <Sidebar />
           <el-col :span="18"> -->
         <div class="centering">
         <Nuxt/>
@@ -19,13 +18,11 @@
 
 <script>
 import NavBar from '~/components/NavBar.vue';
-import Sidebar from '~/components/Sidebar.vue';
 import Search from '~/components/Search.vue';
 import Footer from '~/components/Footer.vue';
 export default {
   components:{
     NavBar,
-    Sidebar,
     Footer,
     Search,
   }
