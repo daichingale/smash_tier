@@ -56,7 +56,7 @@ export default {
     // 'bootstrap-vue/nuxt',
     // '@nuxtjs/google-analytics',
     '@nuxtjs/google-gtag',
-    'google-gtag', {
+    'google-gtag': {
       id: process.env.GOOGLE_ANALYTICS_ID,
       debug: true, // Enable to track in dev mode.
     },
