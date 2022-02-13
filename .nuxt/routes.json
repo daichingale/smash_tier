@@ -2,36 +2,36 @@
   {
     "name": "404",
     "path": "/404",
-    "component": "/Users/daichingale/Desktop/gachiblog2/pages/404.vue",
+    "component": "/Users/daichingale/Desktop/smash_tier/pages/404.vue",
     "chunkName": "pages/404",
-    "_name": "_749cc495"
+    "_name": "_3f991998"
   },
   {
     "name": "about",
     "path": "/about",
-    "component": "/Users/daichingale/Desktop/gachiblog2/pages/about.vue",
+    "component": "/Users/daichingale/Desktop/smash_tier/pages/about.vue",
     "chunkName": "pages/about",
-    "_name": "_770861ac"
+    "_name": "_b5bd5bee"
   },
   {
     "name": "posts",
     "path": "/posts",
-    "component": "/Users/daichingale/Desktop/gachiblog2/pages/posts/index.vue",
+    "component": "/Users/daichingale/Desktop/smash_tier/pages/posts/index.vue",
     "chunkName": "pages/posts/index",
-    "_name": "_014b06f3"
+    "_name": "_10d4a692"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/daichingale/Desktop/gachiblog2/pages/index.vue",
+    "component": "/Users/daichingale/Desktop/smash_tier/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_3798ac22"
+    "_name": "_764da664"
   },
   {
     "name": "slug",
     "path": "/:slug",
-    "component": "/Users/daichingale/Desktop/gachiblog2/pages/_slug/index.vue",
+    "component": "/Users/daichingale/Desktop/smash_tier/pages/_slug/index.vue",
     "chunkName": "pages/_slug/index",
-    "_name": "_189435ea"
+    "_name": "_281dd589"
   }
 ]
