@@ -12,3 +12,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Search>` | `<search>` (components/Search.vue)
 - `<Sidebar>` | `<sidebar>` (components/Sidebar.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
+- `<Fontawesome>` | `<fontawesome>` (components/fontawesome.vue)

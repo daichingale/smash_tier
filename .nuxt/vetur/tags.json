@@ -16,5 +16,8 @@
   },
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
+  },
+  "Fontawesome": {
+    "description": "Auto imported from components/fontawesome.vue"
   }
 }

@@ -8,9 +8,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'gachiblog2',
+    title: 'Ver.3 Blog',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
@@ -46,10 +46,14 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
+  fontawesome: {
+    component: 'fa',
+  },
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    'bootstrap-vue/nuxt',
+    // 'nuxt-fontawesome',
+    // 'bootstrap-vue/nuxt',
     '@nuxtjs/google-analytics',
     ['@nuxtjs/google-adsense', 
     {
