@@ -54,7 +54,6 @@
     <p class="card-text">
                   ネス使いの楽園「ネス窓」についてはこちらですよ
      </p>
-     <img src="~/assets/ness_san01.jpg" alt="ネスサン" title="ネスサン" width="50%">
   </el-card>
   </div>
 </template>
