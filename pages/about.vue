@@ -31,3 +31,22 @@ export default {
   },
 }
 </script>
+<style>
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40 0 20;
+    background-color: #eee;
+    padding: 10 20;
+    border-radius: 5px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+  }
+</style>

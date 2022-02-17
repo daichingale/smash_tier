@@ -6,42 +6,46 @@
       <div id="float_kun">
       <img :src="content.image.url" width="50" height="50" id="image_kun">
       <nuxt-link :to="`/${content.id}`" id="post_lists">{{ content.title }}</nuxt-link>
+      <p>{{ content.createdDate }}</p>
       </div>
     </li>
   </ul>
 </div>
 </template>
 
-// <script>
-// import axios from 'axios'
+<script>
 export default {
   head () {
     return {
       title : 'Posts',
     }
   },
-//   async asyncData( $config ) {
-//     const { data } = await axios.get(
-//       "https://smashbrosinfo.microcms.io/api/v1/blog",
-//       {
-//           headers:{"X-MICROCMS-API-KEY":$config.apiKey}
-//       }
-//     )
-//     return data;
-//   }
-// }
 async asyncData({ $microcms }) {
     const data = await $microcms.get({
       endpoint: "blog",
     });
-    return data;
+    return data
   },
 }
 </script>
 
 <style>
   h1 {
-
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40 0 20;
+    background-color: #eee;
+    padding: 10 20;
+    border-radius: 5px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
   }
   #posts_uls{
 
