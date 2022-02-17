@@ -1,6 +1,7 @@
 export { default as Footer } from '../../components/Footer.vue'
 export { default as NavBar } from '../../components/NavBar.vue'
 export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
+export { default as Paypal } from '../../components/Paypal.vue'
 export { default as Search } from '../../components/Search.vue'
 export { default as Sidebar } from '../../components/Sidebar.vue'
 export { default as Tutorial } from '../../components/Tutorial.vue'

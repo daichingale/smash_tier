@@ -6,7 +6,7 @@
     <div class="category">
       <p>カテゴリ:{{ category.category }}</p>
       </div>
-    <img :src="image.url" width=50% id="gazou">
+    <img :src="image.url" id="gazou">
     <hr>
     <div class="post" v-html="blogtext"></div>
   </main>
@@ -28,7 +28,14 @@ export default {
       endpoint: "blog",
       contentId: params.slug,
     });
-    return data
+    return {
+      title: data.title,
+      category: data.category,
+      publishedAt: data.publishedAt,
+      blogtext: data.blogtext,
+      image: data.image,
+
+    }
   },
 }
 </script>

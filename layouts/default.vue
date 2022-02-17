@@ -9,8 +9,8 @@
         </div>  
           <!-- </el-col>
         </el-row> -->
+        <!-- <Paypal /> -->
         <adsbygoogle />
-
       <Footer />
     
     </div>
@@ -20,11 +20,13 @@
 import NavBar from '~/components/NavBar.vue';
 import Search from '~/components/Search.vue';
 import Footer from '~/components/Footer.vue';
+// import Paypal from '~/components/Paypal.vue';
 export default {
   components:{
     NavBar,
     Footer,
     Search,
+    // Paypal,
   }
 }
 </script>

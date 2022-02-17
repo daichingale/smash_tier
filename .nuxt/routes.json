@@ -3,35 +3,30 @@
     "name": "404",
     "path": "/404",
     "component": "/Users/daichingale/Desktop/smash_tier/pages/404.vue",
-    "chunkName": "pages/404",
-    "_name": "_3f991998"
+    "chunkName": "pages/404"
   },
   {
     "name": "about",
     "path": "/about",
     "component": "/Users/daichingale/Desktop/smash_tier/pages/about.vue",
-    "chunkName": "pages/about",
-    "_name": "_b5bd5bee"
+    "chunkName": "pages/about"
   },
   {
     "name": "posts",
     "path": "/posts",
     "component": "/Users/daichingale/Desktop/smash_tier/pages/posts/index.vue",
-    "chunkName": "pages/posts/index",
-    "_name": "_10d4a692"
+    "chunkName": "pages/posts/index"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/daichingale/Desktop/smash_tier/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_764da664"
+    "chunkName": "pages/index"
   },
   {
     "name": "slug",
     "path": "/:slug",
     "component": "/Users/daichingale/Desktop/smash_tier/pages/_slug/index.vue",
-    "chunkName": "pages/_slug/index",
-    "_name": "_281dd589"
+    "chunkName": "pages/_slug/index"
   }
 ]
