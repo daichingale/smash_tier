@@ -2,7 +2,7 @@
 <div>
  <main class="main">
     <h1 class="title">{{ title }}</h1>
-    <p class="publishedAt">{{ publishedAt }}</p>
+    <p class="createdDate">{{ createdDate }}</p>
     <div class="category">
       <p>カテゴリ:{{ category.category }}</p>
       </div>
@@ -31,7 +31,7 @@ export default {
     return {
       title: data.title,
       category: data.category,
-      publishedAt: data.publishedAt,
+      createdDate: data.createdDate,
       blogtext: data.blogtext,
       image: data.image,
 
