@@ -1,7 +1,7 @@
 <template>
   <div class="navibar_kun">
     <el-menu class="navbar_element_ui" hide-timeout="2" mode="horizontal" @select="handleSelect" id="navbars_elui">
-      <el-menu-item index="1" id="elmenu_kun"><nuxt-link to="/">Home</nuxt-link></el-menu-item>
+      <el-menu-item index="1" id="elmenu_kun"><nuxt-link to="/">Top</nuxt-link></el-menu-item>
       <el-menu-item index="2" id="elmenu_kun"><nuxt-link to="/about">About</nuxt-link></el-menu-item>
       <el-menu-item index="3" id="elmenu_kun"><nuxt-link to="/posts">Posts</nuxt-link></el-menu-item>
     </el-menu>

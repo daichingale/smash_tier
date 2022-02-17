@@ -67,7 +67,7 @@ export default {
   head () {
     return {
       titleTemplate: null,
-      title : 'Home',
+      title : 'Top | 趣味に全力を尽くす男のブログ',
       link: [{
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
