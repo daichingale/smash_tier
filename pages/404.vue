@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper">
-    <NavBar />
     <div class="container">
       <dl>
         <dt class="status">404</dt>

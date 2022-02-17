@@ -47,7 +47,7 @@
       <div class="card-header">
         <h4>How to join Japanese Ness Team</h4>
         <el-button class="button" round><i class="fa-solid fa-baseball"></i>
-          <a href="#"
+          <a href="/vip-ness"
                   class="card-link" target="_blank" rel="noopener noreferrer">Ness team</a></el-button>
       </div>
     </template>
