@@ -1,4 +1,4 @@
-# gachiblog2
+# Ver.3 Blog
 
 ## Build Setup
 

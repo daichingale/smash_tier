@@ -66,6 +66,7 @@ export default {
    },
   head () {
     return {
+      titleTemplate: null,
       title : 'Home',
       link: [{
           rel: "stylesheet",

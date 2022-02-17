@@ -12,11 +12,22 @@ export default {
     htmlAttrs: {
       lang: 'ja',
     },
+    titleTemplate: '%s | ' + '趣味に全力を尽くす男のブログ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'descripion', name: 'description', content: 'サイトの説明' || 'スマブラメモ・ゲームネタについて作曲・編曲・VOCALOID・良いと思った曲などについてプログラミングの自学自習のネタについて雑多に書いていきます。' },
+      { hid: 'keywords', name: 'keywords', content: 'スマブラSP,DTM,音楽,プログラミング,開発,SSBU,music,programing' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'サイト名' },
       { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://smashbros-info.com/' },
+      { hid: 'og:title', property: 'og:title', content: '趣味に全力を尽くす男のブログ' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'ばーさんちゃんねる' },
+      { hid: 'og:description', property: 'og:description', content: 'スマブラメモ・ゲームネタについて作曲・編曲・VOCALOID・良いと思った曲などについてプログラミングの自学自習のネタについて雑多に書いていきます。' },
+      { hid: 'og:image', property: 'og:image', content: '/assets/dtm_musician.png' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@ver3_ocharake' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },

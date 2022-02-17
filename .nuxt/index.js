@@ -14,7 +14,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 import nuxt_plugin_plugin_36dab2fa from 'nuxt_plugin_plugin_36dab2fa' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_adsbygoogle_68cee006 from 'nuxt_plugin_adsbygoogle_68cee006' // Source: ./adsbygoogle.js (mode: 'all')
-import nuxt_plugin_googleanalytics_71568916 from 'nuxt_plugin_googleanalytics_71568916' // Source: ./google-analytics.js (mode: 'client')
 import nuxt_plugin_axios_13f3f5e0 from 'nuxt_plugin_axios_13f3f5e0' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_microcms_14048bba from 'nuxt_plugin_microcms_14048bba' // Source: ./microcms.js (mode: 'all')
 import nuxt_plugin_elementui_d905880e from 'nuxt_plugin_elementui_d905880e' // Source: ../plugins/element-ui (mode: 'all')
@@ -67,7 +66,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Ver.3 Blog","htmlAttrs":{"lang":"ja"},"meta":[{"name":"robots","content":"noindex,noarchive,nofollow"},{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[{"hid":"adsbygoogle-script","defer":true,"crossorigin":"anonymous","src":"\u002F\u002Fpagead2.googlesyndication.com\u002Fpagead\u002Fjs\u002Fadsbygoogle.js?client=ca-google"},{"hid":"adsbygoogle","innerHTML":"if (!window.__abg_called){ (window.adsbygoogle = window.adsbygoogle || []); adsbygoogle.pauseAdRequests=0;\n          adsbygoogle.push({\n      google_ad_client: \"ca-google\",\n      overlays: {bottom: false},\n      enable_page_level_ads: true\n    }); window.__abg_called = true;}"}],"__dangerouslyDisableSanitizersByTagID":{"adsbygoogle":["innerHTML"]}},
+    head: {"title":"Ver.3 Blog","htmlAttrs":{"lang":"ja"},"titleTemplate":"%s | 趣味に全力を尽くす男のブログ","meta":[{"name":"robots","content":"noindex,noarchive,nofollow"},{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"descripion","name":"description","content":"サイトの説明"},{"hid":"keywords","name":"keywords","content":"スマブラSP,DTM,音楽,プログラミング,開発,SSBU,music,programing"},{"hid":"og:site_name","property":"og:site_name","content":"サイト名"},{"name":"format-detection","content":"telephone=no"},{"hid":"og:type","property":"og:type","content":"website"},{"hid":"og:url","property":"og:url","content":"https:\u002F\u002Fsmashbros-info.com\u002F"},{"hid":"og:title","property":"og:title","content":"趣味に全力を尽くす男のブログ"},{"hid":"og:site_name","property":"og:site_name","content":"ばーさんちゃんねる"},{"hid":"og:description","property":"og:description","content":"スマブラメモ・ゲームネタについて作曲・編曲・VOCALOID・良いと思った曲などについてプログラミングの自学自習のネタについて雑多に書いていきます。"},{"hid":"og:image","property":"og:image","content":"\u002Fassets\u002Fdtm_musician.png"},{"hid":"twitter:card","name":"twitter:card","content":"summary_large_image"},{"hid":"twitter:site","name":"twitter:site","content":"@ver3_ocharake"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[{"hid":"adsbygoogle-script","defer":true,"crossorigin":"anonymous","src":"\u002F\u002Fpagead2.googlesyndication.com\u002Fpagead\u002Fjs\u002Fadsbygoogle.js?client=ca-google"},{"hid":"adsbygoogle","innerHTML":"if (!window.__abg_called){ (window.adsbygoogle = window.adsbygoogle || []); adsbygoogle.pauseAdRequests=0;\n          adsbygoogle.push({\n      google_ad_client: \"ca-google\",\n      overlays: {bottom: false},\n      enable_page_level_ads: true\n    }); window.__abg_called = true;}"}],"__dangerouslyDisableSanitizersByTagID":{"adsbygoogle":["innerHTML"]}},
 
     router,
     nuxt: {
@@ -187,10 +186,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_adsbygoogle_68cee006 === 'function') {
     await nuxt_plugin_adsbygoogle_68cee006(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_googleanalytics_71568916 === 'function') {
-    await nuxt_plugin_googleanalytics_71568916(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_13f3f5e0 === 'function') {
