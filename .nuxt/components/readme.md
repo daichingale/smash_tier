@@ -9,7 +9,6 @@ You can directly use them in pages and other components without the need to impo
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<NavBar>` | `<nav-bar>` (components/NavBar.vue)
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
-- `<Paypal>` | `<paypal>` (components/Paypal.vue)
 - `<Search>` | `<search>` (components/Search.vue)
 - `<Sidebar>` | `<sidebar>` (components/Sidebar.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)

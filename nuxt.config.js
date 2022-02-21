@@ -71,7 +71,7 @@ export default {
     // 'bootstrap-vue/nuxt',
     // '@nuxtjs/google-analytics',
     '@nuxtjs/google-gtag',
-    ['@nuxtjs/google-adsense', 
+    ['@nuxtjs/google-adsense',
     {
       id: process.env.GOOGLE_ADSENSE_ID,
       pageLevelAds: true,

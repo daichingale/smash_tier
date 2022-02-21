@@ -2,7 +2,7 @@
 <div>
  <main class="main">
     <h1 class="title">{{ title }}</h1>
-    <p class="createdDate">{{ createdDate }}</p>
+    <p class="publishedAt">{{ new Date(publishedAt).toLocaleDateString() }} {{ new Date(publishedAt).toLocaleTimeString('en-US') }}</p>
     <div class="category">
       <p>カテゴリ:{{ category.category }}</p>
       </div>
@@ -11,7 +11,7 @@
     <div class="post" v-html="blogtext"></div>
   </main>
 </div>
-  
+
 </template>
 
 <script>
@@ -31,7 +31,7 @@ export default {
     return {
       title: data.title,
       category: data.category,
-      createdDate: data.createdDate,
+      publishedAt: data.publishedAt,
       blogtext: data.blogtext,
       image: data.image,
 
@@ -84,7 +84,7 @@ export default {
 .category:before {left: 10px;}
 .category:after {right: 10px;}
 .category p {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 </style>
